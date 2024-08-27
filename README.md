@@ -2,6 +2,8 @@
 
 Este proyecto es un **Encriptador de Texto** desarrollado como parte de un desafío de Alura Latam. El objetivo de este proyecto es permitir a los usuarios encriptar y desencriptar texto utilizando un conjunto de reglas predefinidas.
 
+Se realizan pruebas en varios navegadores, y su visualización es la esperada, llegado al caso de que chrome presente algún conflicto, por favor abrir por incognito.
+
 ## Funcionalidades
 
 - **Encriptar Texto**: Convierte las vocales del texto en una secuencia de caracteres según las siguientes reglas:
