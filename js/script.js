@@ -3,9 +3,9 @@ const btnEncriptar = document.querySelector(".btn-encriptar");
 const txtEncriptar = document.querySelector(".encriptar");
 const aviso = document.querySelector(".texto-aviso");
 const respuesta = document.querySelector(".evaluar");
-const contenido = document.querySelector(".tarjeta-contenedor");
 const btnCopiar = document.querySelector(".btn-copiar");
 const btnDesencriptar = document.querySelector(".btn-desencriptar");
+const sectionTarjeta = document.querySelector(".section-tarjeta");
 
 //-------Funciones Utilitarias-------//
 const mostrarAviso = (mensaje) => {
@@ -51,6 +51,11 @@ const actualizarRespuesta = (texto) => {
     respuesta.innerHTML = texto;
     btnCopiar.style.visibility = "visible";
     document.querySelector(".container-tarjeta").classList.add("oculto");
+    hacerScroll(sectionTarjeta); // Desplazar hacia la sección del resultado en móviles
+};
+
+const hacerScroll = (elemento) => {
+    elemento.scrollIntoView({ behavior: "smooth" });
 };
 
 //-------Eventos-------//
